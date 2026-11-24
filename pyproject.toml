@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resx"
+version = "0.1.0"
+description = "数据采集 / 爬虫场景的 Python 基础设施工具库"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+dependencies = [
+    "pydantic",
+    "pymysql",
+    "DBUtils",
+    "redis",
+    "kafka-python",
+    "requests",
+    "requests-toolbelt",
+    "sshtunnel",
+    "esdk-obs-python",
+    "loguru",
+    "netifaces",
+    "python-dateutil",
+    "pytz",
+]
+
+[project.optional-dependencies]
+full = ["crawler_log"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["resx", "resx.*"]

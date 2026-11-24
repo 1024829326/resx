@@ -1,0 +1,13 @@
+pydantic
+pymysql
+DBUtils
+redis
+kafka-python
+requests
+requests-toolbelt
+sshtunnel
+esdk-obs-python
+loguru
+netifaces
+python-dateutil
+pytz
